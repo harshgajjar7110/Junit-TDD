@@ -15,5 +15,16 @@ public class leapYearTest {
         assertEquals(false, leapYear.isLeapYear(2018));
     }
 
+    @Test
+    public void leapYearTestTwo() {
+        assertEquals(true, leapYear.isLeapYear(2000));
+    }
+
+    @Test
+    public void leapYearTestBefore2000() {
+        assertEquals(false, leapYear.isLeapYear(1117));
+        assertEquals(false, leapYear.isLeapYear(1100));
+    }
+
 
 }
